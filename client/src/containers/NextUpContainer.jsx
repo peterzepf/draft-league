@@ -32,18 +32,21 @@ const NextUpContainer = ({
   pokemon,
   dispatch,
 }) => {
-  if (user.username === turnOrder[currentPick % turnOrder.length]) {
+  if (
+    user.username !== undefined &&
+    user.username === turnOrder[currentPick % turnOrder.length]
+  ) {
     return (
       <>
-        <Container>
+        <Container style={{ 'padding-bottom': '0px' }}>
           <CurrentPick coachname={turnOrder[currentPick % turnOrder.length]} />
-          <Timer />
+          {/* <Timer /> */}
         </Container>
         <PickDialogContainer
           pokemon={pokemon}
           dispatch={dispatch}
         ></PickDialogContainer>
-        <Container>
+        <Container style={{ 'padding-top': '0px' }}>
           <NextPick
             coachname={turnOrder[(currentPick + 1) % turnOrder.length]}
           />
@@ -55,7 +58,7 @@ const NextUpContainer = ({
       <>
         <Container>
           <CurrentPick coachname={turnOrder[currentPick % turnOrder.length]} />
-          <Timer />
+          {/* <Timer /> */}
         </Container>
         <Container>
           <NextPick

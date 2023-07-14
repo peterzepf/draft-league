@@ -26,6 +26,7 @@ draftController.createLeague = async (req, res, next) => {
     pokemon,
   } = req.body;
   try {
+    console.log('Issuing request to db creating league: ', league_name);
     const newLeague = await League.create({
       league_name,
       max_points: max_points ?? 90,

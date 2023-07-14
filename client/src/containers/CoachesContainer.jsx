@@ -26,6 +26,7 @@ const InputContainer = styled(Container)`
 
 const CoachDisplay = styled(Container)`
   justify-content: flex-start;
+  align-items: flex-start;
 `;
 
 // Needs state/logic for:

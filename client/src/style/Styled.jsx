@@ -18,6 +18,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: stretch;
   align-content: space-around;
+  padding: 1em;
   gap: 1em;
 `;
 
@@ -46,3 +47,21 @@ export const Button = styled.button`
 
 // Intended for use with sprite container, timer box, pick choice details
 export const ContextBox = styled.div``;
+
+export const JimHead = styled.h3`
+  flex-grow: 1;
+  background-color: cornsilk;
+  padding: 10px;
+  border-radius: 50px;
+  padding-left: 20px;
+  align-self: stretch;
+`;
+
+export const JimHead2 = styled.h4`
+  flex-grow: 1;
+  background-color: cornsilk;
+  padding: 10px;
+  border-radius: 50px;
+  padding-left: 20px;
+  align-self: stretch;
+`;

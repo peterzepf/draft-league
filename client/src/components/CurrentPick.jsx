@@ -4,12 +4,14 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { Container } from '../style/Styled.jsx';
-
-const JimHead = styled.h2``;
+import { Container, JimHead } from '../style/Styled.jsx';
 
 const CurrentPick = ({ coachname }) => {
-  return <JimHead>{coachname} is picking</JimHead>;
+  return (
+    <JimHead>
+      <span style={{ color: '#FF3300' }}>{coachname}</span> is picking
+    </JimHead>
+  );
 };
 
 export default CurrentPick;

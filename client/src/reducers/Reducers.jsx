@@ -4,7 +4,7 @@ export const pickPhaseStateInit = {
   currentPick: 0,
   turnOrder: [],
   coaches: [],
-  league: 'test-league-1',
+  league: 'Test-League',
   user: { username: undefined },
   loading: '', // array of strings detailing all unresolved server requests
   newCoachName: '',

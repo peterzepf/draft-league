@@ -13,18 +13,19 @@ const CoachBox = styled(Container)`
   flex-direction: column;
   align-items: flex-start;
   padding: 5px;
+  margin: 5px;
   flex-wrap: nowrap;
   justify-content: flex-start;
   flex: 0 0 15%;
   height: 10em;
   min-width: 10em;
-  border-right: 1px groove #191919;
-  border-bottom: 1px groove #191919;
-  border: ${props => (props.$loggedin ? '4px solid orange' : '')};
+  box-sizing: border-box;
+  border: ${props => (props.$loggedin ? '3px solid orange' : '')};
   background-color: ${({ myturn }) =>
     myturn ? 'IndianRed' : 'LightSlateGrey'};
-  box-shadow: 5px 5px 6px ${({ upNext }) => (upNext ? 'IndianRed' : 'grey')};
+  box-shadow: 5px 5px 6px ${({ upNext }) => (upNext ? 'brown' : 'grey')};
   border-radius: 10px;
+  transition: all 0.25s ease;
 `;
 
 const RosterList = styled.div`
